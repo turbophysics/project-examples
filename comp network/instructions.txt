@@ -1,0 +1,15 @@
+command line format to run simulator:
+python3 netsim.py [topologyfile] [# rounds] [route trace src] [route trace dest]
+
+The last two arguments are optional. If included, the simulator will trace the route of nodes from the source node to the destination node and output the result to the console.
+
+example1:
+python3 netsim.py topology1.txt 2
+
+example2:
+python3 netsim.py topology1.txt 2 0 3
+
+example3:
+python3 netsim.py topology3.txt 10 0 23
+
+There is no error checking in this python script, so giving it erroneous information or non-existent src/dest nodes will likely cause an infinite loop or crash it.
